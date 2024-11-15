@@ -1,0 +1,22 @@
+<!-- MatButtonToggleGroup for switching components -->
+<div class="chartsToggle">
+  <mat-button-toggle-group
+    name="componentToggle"
+    aria-label="Component Toggle Group"
+    (change)="onToggleChange($event.value)"
+    [value]="selectedComponent"
+  >
+    <mat-button-toggle value="BookingsChart">BookingsChart</mat-button-toggle>
+    <mat-button-toggle value="GenderWIseChart"
+      >GenderWiseChart</mat-button-toggle
+    >
+  </mat-button-toggle-group>
+</div>
+
+<!-- Display the selected component -->
+<div [ngSwitch]="selectedComponent">
+  <app-graph *ngSwitchCase="'BookingsChart'"></app-graph>
+  <app-gender-wise-graph
+    *ngSwitchCase="'GenderWIseChart'"
+  ></app-gender-wise-graph>
+</div>

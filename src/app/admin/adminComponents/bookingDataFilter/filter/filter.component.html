@@ -1,0 +1,94 @@
+<form [formGroup]="filterForm" (ngSubmit)="onSearch()" class="form-container">
+  <div class="form-field">
+    <mat-form-field appearance="outline">
+      <mat-label>Start Date</mat-label>
+      <input
+        matInput
+        [matDatepicker]="startPicker"
+        formControlName="startDate"
+      />
+      <mat-datepicker-toggle
+        matSuffix
+        [for]="startPicker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #startPicker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <div class="form-field">
+    <mat-form-field appearance="outline">
+      <mat-label>End Date</mat-label>
+      <input matInput [matDatepicker]="endPicker" formControlName="endDate" />
+      <mat-datepicker-toggle
+        matSuffix
+        [for]="endPicker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #endPicker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <div class="form-field">
+    <mat-form-field appearance="outline">
+      <mat-label>Room</mat-label>
+      <mat-select formControlName="roomFilter">
+        <mat-option [value]="bookingRoomEnum.A">{{
+          bookingRoomEnum.A
+        }}</mat-option>
+        <mat-option [value]="bookingRoomEnum.B">{{
+          bookingRoomEnum.B
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="form-field">
+    <mat-form-field appearance="outline">
+      <mat-label>Workspace Filter</mat-label>
+      <input matInput type="number" formControlName="workspaceFilter" />
+    </mat-form-field>
+  </div>
+
+  <div class="form-field">
+    <mat-form-field appearance="outline">
+      <mat-label>Employee ID</mat-label>
+      <input matInput type="number" formControlName="employeeIdFilter" />
+    </mat-form-field>
+  </div>
+
+  <div class="form-field">
+    <mat-form-field appearance="outline">
+      <mat-label>Booking Time</mat-label>
+      <mat-select formControlName="bookingTimeFilter">
+        <mat-option [value]="bookingTimeEnum.Morning">{{
+          bookingTimeEnum.Morning
+        }}</mat-option>
+        <mat-option [value]="bookingTimeEnum.Afternoon">{{
+          bookingTimeEnum.Afternoon
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="form-field">
+    <mat-form-field appearance="outline">
+      <mat-label>Status</mat-label>
+      <mat-select formControlName="statusFilter">
+        <mat-option [value]="bookingStatusEnum.Booked">{{
+          bookingStatusEnum.Booked
+        }}</mat-option>
+        <mat-option [value]="bookingStatusEnum.Cancelled">{{
+          bookingStatusEnum.Cancelled
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <button
+    mat-raised-button
+    color="primary"
+    class="bigger-button"
+    type="submit"
+    class="form-field"
+  >
+    Search
+  </button>
+</form>

@@ -1,0 +1,55 @@
+<nav class="navbar">
+  <div class="navbar-left">
+    <img
+      src="./assets/Icons/icons8-workspace-26.png"
+      alt="Company Icon"
+      class="company-icon"
+    />
+    <span class="company-name">My Company</span>
+  </div>
+  <div class="navbar-right">
+    <a
+      [routerLink]="'/user/booking'"
+      [queryParams]="{ feature: 'user-booking' }"
+      routerLinkActive="active-link"
+      class="nav-link"
+      >Book a Workspace</a
+    >
+    <a
+      routerLink="/user/booking-details"
+      routerLinkActive="active-link"
+      class="nav-link"
+      >Booking History</a
+    >
+    <a
+      routerLink="/user/upcoming-bookings"
+      routerLinkActive="active-link"
+      class="nav-link"
+      >Upcoming Bookings</a
+    >
+    <!-- <a
+      routerLink="/user/bookingUI"
+      routerLinkActive="active-link"
+      class="nav-link"
+      >Booking Ui</a
+    > -->
+    <a
+      routerLink="/user/update-profile"
+      routerLinkActive="active-link"
+      class="nav-link"
+      >Update Profile</a
+    >
+    <!-- <a
+      routerLink="/user/booking-details-by-id"
+      routerLinkActive="active-link"
+      class="nav-link"
+      >Booking Details</a
+    > -->
+    <a
+      routerLink="/user/sign-out"
+      routerLinkActive="active-link"
+      class="nav-link"
+      >Sign Out</a
+    >
+  </div>
+</nav>

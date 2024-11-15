@@ -1,0 +1,12 @@
+<div class="workspace-container">
+  <div *ngFor="let row of room.workspaces; let rowIndex = index">
+    <div
+      *ngFor="let workspace of row; let colIndex = index"
+      (click)="toggleWorkspaceSelection(workspace)"
+      [class.selected]="workspace.isSelected"
+      [class.taken]="workspace.isTaken"
+    >
+      {{ rowIndex }} - {{ colIndex }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Date</mat-label>
+    <input
+      matInput
+      [matDatepicker]="picker"
+      formControlName="date"
+      [min]="minDate"
+      [max]="maxDate"
+      [matDatepickerFilter]="dateFilter"
+    />
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+    <mat-error *ngIf="form.get('date')?.hasError('required')">
+      Date is required
+    </mat-error>
+  </mat-form-field>
+
+  <!-- Time Select Field with Two Options -->
+  <mat-form-field appearance="fill">
+    <mat-label>Time</mat-label>
+    <mat-select formControlName="time">
+      <mat-option *ngFor="let time of timeOptions" [value]="time.value">{{
+        time.display
+      }}</mat-option>
+    </mat-select>
+    <mat-error *ngIf="form.get('time')?.hasError('required')"
+      >Time is required</mat-error
+    >
+  </mat-form-field>
+
+  <!-- Room Select Field with Two Options -->
+  <mat-form-field appearance="fill">
+    <mat-label>Room</mat-label>
+    <mat-select formControlName="room">
+      <mat-option *ngFor="let room of roomOptions" [value]="room.value">{{
+        room.display
+      }}</mat-option>
+    </mat-select>
+    <mat-error *ngIf="form.get('room')?.hasError('required')"
+      >Room is required</mat-error
+    >
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" *ngIf="isAdmin">
+    <mat-label>Employee ID</mat-label>
+    <mat-select formControlName="employeeId" required>
+      <mat-option *ngFor="let id of employeeIds" [value]="id">{{
+        id
+      }}</mat-option>
+    </mat-select>
+    <mat-error *ngIf="form.get('employeeId')?.hasError('required')"
+      >Employee ID is required</mat-error
+    >
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Select</button>
+</form>
+<div class="booking-container">
+  <div class="bookingUI">
+    <app-bookingUI  [formData]="formData"></app-bookingUI>
+  </div>
+
+  <div><app-details-after-booking></app-details-after-booking></div>
+</div>

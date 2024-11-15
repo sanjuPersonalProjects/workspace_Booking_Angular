@@ -1,0 +1,27 @@
+.form-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 16px; /* Space between fields */
+    justify-content: space-between; /* Align fields with space between them */
+  }
+  .bigger-button {
+    width: 100px; /* Adjust width */
+    
+    height: 100px; /* Adjust height */
+    font-size: 18px; /* Adjust text size */
+    padding: 12px 12px; /* Adjust padding for more space inside */
+  }
+  
+  
+  .form-field {
+    flex: 0 1 calc(25% - 16px); /* 4 fields in one row with gap consideration */
+    min-width: 200px; /* Minimum width to ensure usability */
+    
+  }
+  
+  @media (max-width: 600px) {
+    .form-field {
+      flex: 1 1 100%; /* Full width on smaller screens */
+    }
+  }
+  

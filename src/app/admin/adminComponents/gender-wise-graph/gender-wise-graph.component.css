@@ -1,0 +1,70 @@
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+  }
+  ngx-charts-pie-chart {
+    width: 30%;
+  }
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap: 14px;
+    height: 400px;
+  }
+  
+  .chart-card {
+    flex: 1 1 calc(33% - 16px);
+    max-width: calc(33% - 16px);
+    margin: 4px;
+  }
+  
+  .chart-details {
+    margin-top: 12px;
+    display: flex;
+    justify-content:space-evenly;
+    
+  }
+  /* .chart-details p {
+    
+    margin-left: 5px;
+  } */
+  /* .legend-color-box {
+    width: 14px;
+    height: 14px;
+    margin-right: 3px;
+    margin-left: 10px;
+  } */
+  .donut-container {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+  }
+  .chart-card mat-card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+ 
+  
+  .donut-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .donut-center div {
+    margin: 2px 0;
+  }
+  
+  ngx-charts-legend {
+    display: block !important;
+  }

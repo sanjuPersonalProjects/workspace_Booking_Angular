@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-content>
+    <app-filter (filtersChanged)="onFiltersChanged($event)"></app-filter>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-content>
+    <app-filter-table [bookings]="bookings"></app-filter-table>
+  </mat-card-content>
+</mat-card>

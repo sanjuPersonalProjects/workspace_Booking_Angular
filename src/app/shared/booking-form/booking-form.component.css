@@ -1,0 +1,41 @@
+.form-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically centered */
+    justify-content: space-between; /* Space between fields */
+    gap: 24px; /* Increased space between fields */
+    padding: 8px; /* Add padding inside the form */
+    margin-bottom: 12px; /* Adds space below the form */
+    background-color: #f5f5f5; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  }
+  
+  mat-form-field {
+    flex: 1; /* Allows form fields to grow equally */
+    min-width: 150px; /* Minimum width for form fields */
+  }
+  
+  button {
+     /* Centers the button vertically */
+    margin-left: 0px; /* Adds space to the left of the button */
+    
+  }
+  
+  .booking-container {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: stretch; /* Stretch items to the same height */
+    margin: 20px; /* Add some margin around the container */
+  }
+  
+  .bookingUI, .details {
+    flex: 1; /* Allow each child to grow and take equal space */
+    margin-right: 10px; /* Add some spacing between the two components */
+  }
+  
+  /* Remove margin from the last child to avoid extra space */
+  .details {
+    margin-right: 0; /* No margin on the right for the last component */
+    height: 600px; /* Fixed height for the details component */
+  }
+  

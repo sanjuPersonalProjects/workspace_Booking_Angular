@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #062f5b; /* Blue background */
+    padding: 10px 20px;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .company-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .company-name {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .navbar-right {
+    display: flex;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-link:hover {
+    
+    color: gold;
+  }
+  
+  .active-link {
+    background-color: gray;
+    color: #062f5b;
+  }
+  

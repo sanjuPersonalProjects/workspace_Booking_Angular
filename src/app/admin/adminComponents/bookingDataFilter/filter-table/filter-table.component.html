@@ -1,0 +1,35 @@
+<mat-table [dataSource]="bookings" class="mat-elevation-z8">
+    <ng-container matColumnDef="bookingDate">
+      <mat-header-cell *matHeaderCellDef> Booking Date </mat-header-cell>
+      <mat-cell *matCellDef="let booking"> {{ booking.bookingDate }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="bookingTime">
+      <mat-header-cell *matHeaderCellDef> Booking Time </mat-header-cell>
+      <mat-cell *matCellDef="let booking"> {{ booking.bookingTime }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="bookedRoom">
+      <mat-header-cell *matHeaderCellDef> Booked Room </mat-header-cell>
+      <mat-cell *matCellDef="let booking"> {{ booking.bookedRoom }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="bookedWorkspace">
+      <mat-header-cell *matHeaderCellDef> Booked Workspace </mat-header-cell>
+      <mat-cell *matCellDef="let booking"> {{ booking.bookedWorkspace }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="employeeId">
+      <mat-header-cell *matHeaderCellDef> Employee ID </mat-header-cell>
+      <mat-cell *matCellDef="let booking"> {{ booking.employeeId }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="status">
+      <mat-header-cell *matHeaderCellDef> Status </mat-header-cell>
+      <mat-cell *matCellDef="let booking"> {{ booking.status }} </mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+  

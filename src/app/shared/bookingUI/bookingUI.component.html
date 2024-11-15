@@ -1,0 +1,1352 @@
+<svg
+  width="1000"
+  height="500"
+  viewBox="0 0 1000 500"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Room -->
+  <rect
+    x="0"
+    y="0"
+    width="1000"
+    height="500"
+    fill="#FFF"
+    stroke="black"
+    stroke-width="2"
+  />
+
+  <!-- Top Bench Section -->
+  <rect
+    x="0"
+    y="0"
+    width="1000"
+    height="40"
+    fill="#CFD8DC"
+    stroke="#8c9c8c"
+    stroke-width="2"
+  />
+
+  <text x="440" y="30" text-anchor="middle" font-size="16" fill="black">
+    1-20
+  </text>
+
+  <!-- Top Row Seats -->
+  <g>
+    <ellipse
+      cx="25"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('1')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('1')"
+      matTooltip="Seat 1: {{ seats['1'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="75"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('2')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('2')"
+      matTooltip="Seat 2: {{ seats['2'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="125"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('3')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('3')"
+      matTooltip="Seat 3: {{ seats['3'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="175"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('4')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('4')"
+      matTooltip="Seat 4: {{ seats['4'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="225"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('5')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('5')"
+      matTooltip="Seat 5: {{ seats['5'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="275"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('6')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('6')"
+      matTooltip="Seat 6: {{ seats['6'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="325"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('7')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('7')"
+      matTooltip="Seat 7: {{ seats['7'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="375"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('8')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('8')"
+      matTooltip="Seat 8: {{ seats['8'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="425"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('9')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('9')"
+      matTooltip="Seat 9: {{ seats['9'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="475"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('10')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('10')"
+      matTooltip="Seat 10: {{ seats['10'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="525"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('11')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('11')"
+      matTooltip="Seat 11: {{ seats['11'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="575"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('12')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('12')"
+      matTooltip="Seat 12: {{ seats['12'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="625"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('13')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('13')"
+      matTooltip="Seat 13: {{ seats['13'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="675"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('14')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('14')"
+      matTooltip="Seat 14: {{ seats['14'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="725"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('15')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('15')"
+      matTooltip="Seat 15: {{ seats['15'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="775"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('16')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('16')"
+      matTooltip="Seat 16: {{ seats['16'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="825"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('17')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('17')"
+      matTooltip="Seat 17: {{ seats['17'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="875"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('18')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('18')"
+      matTooltip="Seat 18: {{ seats['18'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="925"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('19')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('19')"
+      matTooltip="Seat 19: {{ seats['19'] }}"
+      matTooltipPosition="above"
+    />
+    <ellipse
+      cx="975"
+      cy="60"
+      rx="10"
+      ry="5"
+      [attr.fill]="getSeatColor('20')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      (click)="toggleSeat('20')"
+      matTooltip="Seat 20: {{ seats['20'] }}"
+      matTooltipPosition="above"
+    />
+  </g>
+  <!-- Cabin and Table Definitions -->
+  <defs>
+    <!-- Glass Cabin -->
+    <g id="glass-cabin">
+      <rect
+        x="0"
+        y="0"
+        width="260"
+        height="150"
+        fill="#fff"
+        stroke="#B0BEC5"
+        stroke-width="2"
+      />
+    </g>
+
+    <!-- Cabin Door -->
+    <g id="cabin-door">
+      <rect
+        x="0"
+        y="0"
+        width="60"
+        height="5"
+        fill="#757575"
+        stroke="#B0BEC5"
+        stroke-width="1"
+      />
+    </g>
+
+    <!-- Bench 1 (smaller) -->
+    <g id="bench-1">
+      <rect
+        x="0"
+        y="0"
+        width="195"
+        height="40"
+        rx="5"
+        ry="5"
+        fill="#CFD8DC"
+        stroke="#B0BEC5"
+        stroke-width="2"
+      />
+    </g>
+
+    <!-- Bench 2 (larger) -->
+    <g id="bench-2">
+      <rect
+        x="0"
+        y="-40"
+        width="260"
+        height="40"
+        rx="5"
+        ry="5"
+        fill="#CFD8DC"
+        stroke="#B0BEC5"
+        stroke-width="2"
+      />
+    </g>
+
+    <!-- Chair -->
+    <g id="chair">
+      <ellipse
+        cx="0"
+        cy="0"
+        rx="10"
+        ry="5"
+        fill="#FF8A80"
+        stroke="#D32F2F"
+        stroke-width="1"
+      />
+    </g>
+
+    <!-- Table Chair -->
+    <g id="chairs">
+      <ellipse
+        cx="0"
+        cy="0"
+        rx="5"
+        ry="10"
+        fill="#f47a60"
+        stroke="#B0BEC5"
+        stroke-width="2"
+      />
+    </g>
+
+    <!-- Table -->
+    <rect
+      id="table"
+      x="200"
+      y="80"
+      width="80"
+      height="160"
+      rx="15"
+      ry="15"
+      fill="#CFD8DC"
+      stroke="#CFD8DC"
+      stroke-width="2"
+    />
+
+    <!-- Hexagon Components -->
+    <g id="central-hexagon">
+      <polygon
+        points="0,-48 41.5,-24 41.5,24 0,48 -41.5,24 -41.5,-24"
+        fill="#CFD8DC"
+        stroke="#B0BEC5"
+        stroke-width="2"
+      />
+    </g>
+    <g id="hex-chair">
+      <ellipse
+        cx="0"
+        cy="0"
+        rx="10"
+        ry="5"
+        fill="#f47a60"
+        stroke="#B0BEC5"
+        stroke-width="2"
+      />
+    </g>
+  </defs>
+
+  <!-- First Cabin Structure -->
+  <g id="full-cabin-structure-1" transform="translate(-20, 330)">
+    <use href="#glass-cabin" x="20" y="20" />
+    <text x="140" y="100" text-anchor="middle" font-size="16" fill="black">
+      53 - 59
+    </text>
+    <use href="#bench-2" x="20" y="170" />
+
+    <use href="#bench-1" x="20" y="20" />
+
+    <!-- Seats Row 1 -->
+    <ellipse
+      cx="52.5"
+      cy="70"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('53')"
+      [attr.fill]="getSeatColor('53')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 53: {{ seats['53'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+    <ellipse
+      cx="117.5"
+      cy="70"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('54')"
+      [attr.fill]="getSeatColor('54')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 54: {{ seats['54'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+    <ellipse
+      cx="183.5"
+      cy="70"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('55')"
+      [attr.fill]="getSeatColor('55')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 55: {{ seats['55'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <!-- Seats Row 2 -->
+    <ellipse
+      cx="52.5"
+      cy="120"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('56')"
+      [attr.fill]="getSeatColor('56')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 56: {{ seats['56'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+    <ellipse
+      cx="117.5"
+      cy="120"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('57')"
+      [attr.fill]="getSeatColor('57')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 57: {{ seats['57'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+    <ellipse
+      cx="183.5"
+      cy="120"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('58')"
+      [attr.fill]="getSeatColor('58')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 58: {{ seats['58'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+    <ellipse
+      cx="248.5"
+      cy="120"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('59')"
+      [attr.fill]="getSeatColor('59')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 59: {{ seats['59'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <use href="#cabin-door" x="220" y="20" />
+  </g>
+
+  <!-- Second Cabin Structure -->
+  <g id="full-cabin-structure-2" transform="translate(400, 330)">
+    <use href="#glass-cabin" x="20" y="20" />
+    <text x="140" y="100" text-anchor="middle" font-size="16" fill="black">
+      60 - 66
+    </text>
+    <use href="#bench-2" x="20" y="170" />
+
+    <ellipse
+      cx="52.5"
+      cy="120"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('60')"
+      [attr.fill]="getSeatColor('60')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 60: {{ seats['60'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <use href="#chair" x="117.5" y="120" />
+    <ellipse
+      cx="117.5"
+      cy="120"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('61')"
+      [attr.fill]="getSeatColor('61')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 61: {{ seats['61'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="183.5"
+      cy="120"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('62')"
+      [attr.fill]="getSeatColor('62')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 62: {{ seats['62'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="248.5"
+      cy="120"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('63')"
+      [attr.fill]="getSeatColor('63')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 63: {{ seats['63'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <use href="#bench-1" x="85" y="20" />
+    <ellipse
+      cx="117.5"
+      cy="70"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('64')"
+      [attr.fill]="getSeatColor('64')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 64: {{ seats['64'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <use href="#chair" x="183.5" y="70" />
+    <ellipse
+      cx="183.5"
+      cy="70"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('65')"
+      [attr.fill]="getSeatColor('65')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 65: {{ seats['65'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <use href="#chair" x="248.5" y="70" />
+    <ellipse
+      cx="248.5"
+      cy="70"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('66')"
+      [attr.fill]="getSeatColor('66')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 66: {{ seats['66'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <use href="#cabin-door" x="20" y="20" />
+  </g>
+  <!-- Table Groups -->
+  <!-- Table Group 1 -->
+  <g transform="translate(-140, -30)">
+    <use href="#table" x="0" y="80" />
+    <text x="240" y="280" text-anchor="middle" font-size="16" fill="black">
+      21 - 28
+    </text>
+
+    <ellipse
+      cx="240"
+      cy="150"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('21')"
+      [attr.fill]="getSeatColor('21')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 21: {{ seats['21'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <use href="#chairs" x="240" y="330" transform="rotate(90 240 330)" />
+    <ellipse
+      cx="240"
+      cy="330"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('22')"
+      [attr.fill]="getSeatColor('22')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 22: {{ seats['22'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="190"
+      cy="191.6"
+      transform="rotate(90 190 191.6)"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('23')"
+      [attr.fill]="getSeatColor('23')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 23: {{ seats['23'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="190"
+      cy="244.86"
+      transform="rotate(90 190 244.86)"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('24')"
+      [attr.fill]="getSeatColor('24')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 24: {{ seats['24'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="190"
+      cy="298.46"
+      transform="rotate(90 190 298.46)"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('25')"
+      [attr.fill]="getSeatColor('25')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 25: {{ seats['25'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="290"
+      cy="191.6"
+      transform="rotate(90 290 191.6)"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('26')"
+      [attr.fill]="getSeatColor('26')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 26: {{ seats['26'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="290"
+      cy="244.86"
+      transform="rotate(90 290 244.86)"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('27')"
+      [attr.fill]="getSeatColor('27')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 27: {{ seats['27'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="290"
+      cy="298.46"
+      transform="rotate(90 290 298.46)"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('28')"
+      [attr.fill]="getSeatColor('28')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 28: {{ seats['28'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+  </g>
+
+  <!-- Table Group 2 -->
+  <g transform="translate(40, -30)">
+    <use href="#table" x="0" y="80" />
+    <text x="240" y="280" text-anchor="middle" font-size="16" fill="black">
+      29 - 36
+    </text>
+
+    <
+    <ellipse
+      cx="240"
+      cy="150"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('29')"
+      [attr.fill]="getSeatColor('29')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 29: {{ seats['29'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <use href="#chairs" x="240" y="330" transform="rotate(90 240 330)" />
+    <ellipse
+      cx="240"
+      cy="330"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('30')"
+      [attr.fill]="getSeatColor('30')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 30: {{ seats['30'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="190"
+      cy="191.6"
+      transform="rotate(90 190 191.6)"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('31')"
+      [attr.fill]="getSeatColor('31')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 31: {{ seats['31'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="190"
+      cy="244.86"
+      transform="rotate(90 190 244.86)"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('32')"
+      [attr.fill]="getSeatColor('32')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 32: {{ seats['32'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="190"
+      cy="298.46"
+      transform="rotate(90 190 298.46)"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('33')"
+      [attr.fill]="getSeatColor('33')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 33: {{ seats['33'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="290"
+      cy="191.6"
+      transform="rotate(90 290 191.6)"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('34')"
+      [attr.fill]="getSeatColor('34')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 34: {{ seats['34'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="290"
+      cy="244.86"
+      transform="rotate(90 290 244.86)"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('35')"
+      [attr.fill]="getSeatColor('35')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 35: {{ seats['35'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="290"
+      cy="298.46"
+      transform="rotate(90 290 298.46)"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('36')"
+      [attr.fill]="getSeatColor('36')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 36: {{ seats['36'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+  </g>
+
+  <!-- Table Group 3 -->
+  <g transform="translate(220, -30)">
+    <use href="#table" x="0" y="80" />
+    <text x="240" y="280" text-anchor="middle" font-size="16" fill="black">
+      37 - 44
+    </text>
+
+    <ellipse
+      cx="240"
+      cy="150"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('37')"
+      [attr.fill]="getSeatColor('37')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 37: {{ seats['37'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="240"
+      cy="330"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('38')"
+      [attr.fill]="getSeatColor('38')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 38: {{ seats['38'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="190"
+      cy="191.6"
+      rx="10"
+      ry="5"
+      transform="rotate(90 190 191.6)"
+      (click)="toggleSeat('39')"
+      [attr.fill]="getSeatColor('39')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 39: {{ seats['39'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="190"
+      cy="244.86"
+      rx="10"
+      ry="5"
+      transform="rotate(90 190 244.86)"
+      (click)="toggleSeat('40')"
+      [attr.fill]="getSeatColor('40')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 40: {{ seats['40'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="190"
+      cy="298.46"
+      rx="10"
+      ry="5"
+      transform="rotate(90 190 298.46)"
+      (click)="toggleSeat('41')"
+      [attr.fill]="getSeatColor('41')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 41: {{ seats['41'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="290"
+      cy="191.6"
+      rx="10"
+      ry="5"
+      transform="rotate(90 290 191.6)"
+      (click)="toggleSeat('42')"
+      [attr.fill]="getSeatColor('42')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 42: {{ seats['42'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="290"
+      cy="244.86"
+      rx="10"
+      ry="5"
+      transform="rotate(90 290 244.86)"
+      (click)="toggleSeat('43')"
+      [attr.fill]="getSeatColor('43')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 43: {{ seats['43'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="290"
+      cy="298.46"
+      rx="10"
+      ry="5"
+      transform="rotate(90 290 298.46)"
+      (click)="toggleSeat('44')"
+      [attr.fill]="getSeatColor('44')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 44: {{ seats['44'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+  </g>
+  <!-- Table Group 4 -->
+  <g transform="translate(400, -30)">
+    <use href="#table" x="0" y="80" />
+    <text x="240" y="280" text-anchor="middle" font-size="16" fill="black">
+      45 - 52
+    </text>
+
+    <ellipse
+      cx="240"
+      cy="150"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('45')"
+      [attr.fill]="getSeatColor('45')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 45: {{ seats['45'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="240"
+      cy="330"
+      rx="10"
+      ry="5"
+      (click)="toggleSeat('46')"
+      [attr.fill]="getSeatColor('46')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 46: {{ seats['46'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="190"
+      cy="191.6"
+      rx="10"
+      ry="5"
+      transform="rotate(90 190 191.6)"
+      (click)="toggleSeat('47')"
+      [attr.fill]="getSeatColor('47')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 47: {{ seats['47'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="190"
+      cy="244.86"
+      rx="10"
+      ry="5"
+      transform="rotate(90 190 244.86)"
+      (click)="toggleSeat('48')"
+      [attr.fill]="getSeatColor('48')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 48: {{ seats['48'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+    <use href="#chairs" x="190" y="298.46" />
+    <ellipse
+      cx="190"
+      cy="298.46"
+      rx="10"
+      ry="5"
+      transform="rotate(90 190 298.46)"
+      (click)="toggleSeat('49')"
+      [attr.fill]="getSeatColor('49')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 49: {{ seats['49'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+    <use href="#chairs" x="290" y="191.6" />
+    <ellipse
+      cx="290"
+      cy="191.6"
+      rx="10"
+      ry="5"
+      transform="rotate(90 290 191.6)"
+      (click)="toggleSeat('50')"
+      [attr.fill]="getSeatColor('50')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 50: {{ seats['50'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+    <use href="#chairs" x="290" y="244.86" />
+    <ellipse
+      cx="290"
+      cy="244.86"
+      rx="10"
+      ry="5"
+      transform="rotate(90 290 244.86)"
+      (click)="toggleSeat('51')"
+      [attr.fill]="getSeatColor('51')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 51: {{ seats['51'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+
+    <ellipse
+      cx="290"
+      cy="298.46"
+      rx="10"
+      ry="5"
+      transform="rotate(90 290 298.46)"
+      (click)="toggleSeat('52')"
+      [attr.fill]="getSeatColor('52')"
+      stroke="#B0BEC5"
+      stroke-width="2"
+      matTooltip="Seat 52: {{ seats['52'] }}"
+      matTooltipPosition="above"
+    ></ellipse>
+  </g>
+  <!-- Hexagon Groups -->
+  <g id="hexagon-section">
+    <!-- First Hexagon Group -->
+    <g transform="translate(890, 150)">
+      <use href="#central-hexagon" />
+      <text x="0" y="5" text-anchor="middle" font-size="16" fill="black">
+        67 - 72
+      </text>
+
+      <ellipse
+        cx="58"
+        cy="0"
+        rx="10"
+        ry="5"
+        transform="rotate(90 58 0)"
+        (click)="toggleSeat('67')"
+        [attr.fill]="getSeatColor('67')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 67: {{ seats['67'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+
+      <ellipse
+        cx="29"
+        cy="50"
+        rx="10"
+        ry="5"
+        transform="rotate(150 29 50)"
+        (click)="toggleSeat('68')"
+        [attr.fill]="getSeatColor('68')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 68: {{ seats['68'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+
+      <ellipse
+        cx="-29"
+        cy="50"
+        rx="10"
+        ry="5"
+        transform="rotate(210 -29 50)"
+        (click)="toggleSeat('69')"
+        [attr.fill]="getSeatColor('69')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 69: {{ seats['69'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+
+      <ellipse
+        cx="-58"
+        cy="0"
+        rx="10"
+        ry="5"
+        transform="rotate(270 -58 0)"
+        (click)="toggleSeat('70')"
+        [attr.fill]="getSeatColor('70')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 70: {{ seats['70'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+
+      <ellipse
+        cx="-29"
+        cy="-50"
+        rx="10"
+        ry="5"
+        transform="rotate(330 -29 -50)"
+        (click)="toggleSeat('71')"
+        [attr.fill]="getSeatColor('71')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 71: {{ seats['71'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+      <use href="#hex-chair" x="29" y="-50" transform="rotate(30 29 -50)" />
+      <ellipse
+        cx="29"
+        cy="-50"
+        rx="10"
+        ry="5"
+        transform="rotate(30 29 -50)"
+        (click)="toggleSeat('72')"
+        [attr.fill]="getSeatColor('72')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 72: {{ seats['72'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+    </g>
+    <!-- Second Hexagon Group -->
+    <g transform="translate(890, 290)">
+      <use href="#central-hexagon" />
+      <text x="0" y="5" text-anchor="middle" font-size="16" fill="black">
+        73 - 78
+      </text>
+
+      <ellipse
+        cx="58"
+        cy="0"
+        rx="10"
+        ry="5"
+        transform="rotate(90 58 0)"
+        (click)="toggleSeat('73')"
+        [attr.fill]="getSeatColor('73')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 73: {{ seats['73'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+
+      <ellipse
+        cx="29"
+        cy="50"
+        rx="10"
+        ry="5"
+        transform="rotate(150 29 50)"
+        (click)="toggleSeat('74')"
+        [attr.fill]="getSeatColor('74')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 74: {{ seats['74'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+
+      <ellipse
+        cx="-29"
+        cy="50"
+        rx="10"
+        ry="5"
+        transform="rotate(210 -29 50)"
+        (click)="toggleSeat('75')"
+        [attr.fill]="getSeatColor('75')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 75: {{ seats['75'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+
+      <ellipse
+        cx="-58"
+        cy="0"
+        rx="10"
+        ry="5"
+        transform="rotate(270 -58 0)"
+        (click)="toggleSeat('76')"
+        [attr.fill]="getSeatColor('76')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 76: {{ seats['76'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+
+      <ellipse
+        cx="-29"
+        cy="-50"
+        rx="10"
+        ry="5"
+        transform="rotate(330 -29 -50)"
+        (click)="toggleSeat('77')"
+        [attr.fill]="getSeatColor('77')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 77: {{ seats['77'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+
+      <ellipse
+        cx="29"
+        cy="-50"
+        rx="10"
+        ry="5"
+        transform="rotate(30 29 -50)"
+        (click)="toggleSeat('78')"
+        [attr.fill]="getSeatColor('78')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 78: {{ seats['78'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+    </g>
+    <!-- Third Hexagon Group -->
+    <g transform="translate(890, 430)">
+      <use href="#central-hexagon" />
+      <text x="0" y="5" text-anchor="middle" font-size="16" fill="black">
+        79 - 84
+      </text>
+
+      <ellipse
+        cx="58"
+        cy="0"
+        rx="10"
+        ry="5"
+        transform="rotate(90 58 0)"
+        (click)="toggleSeat('79')"
+        [attr.fill]="getSeatColor('79')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 79: {{ seats['79'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+
+      <ellipse
+        cx="29"
+        cy="50"
+        rx="10"
+        ry="5"
+        transform="rotate(150 29 50)"
+        (click)="toggleSeat('80')"
+        [attr.fill]="getSeatColor('80')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 80: {{ seats['80'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+
+      <ellipse
+        cx="-29"
+        cy="50"
+        rx="10"
+        ry="5"
+        transform="rotate(210 -29 50)"
+        (click)="toggleSeat('81')"
+        [attr.fill]="getSeatColor('81')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 81: {{ seats['81'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+
+      <ellipse
+        cx="-58"
+        cy="0"
+        rx="10"
+        ry="5"
+        transform="rotate(270 -58 0)"
+        (click)="toggleSeat('82')"
+        [attr.fill]="getSeatColor('82')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 82: {{ seats['82'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+
+      <ellipse
+        cx="-29"
+        cy="-50"
+        rx="10"
+        ry="5"
+        transform="rotate(330 -29 -50)"
+        (click)="toggleSeat('83')"
+        [attr.fill]="getSeatColor('83')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 83: {{ seats['83'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+
+      <ellipse
+        cx="29"
+        cy="-50"
+        rx="10"
+        ry="5"
+        transform="rotate(30 29 -50)"
+        (click)="toggleSeat('84')"
+        [attr.fill]="getSeatColor('84')"
+        stroke="#B0BEC5"
+        stroke-width="2"
+        matTooltip="Seat 84: {{ seats['84'] }}"
+        matTooltipPosition="above"
+      ></ellipse>
+    </g>
+  </g>
+</svg>
